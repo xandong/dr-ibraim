@@ -2,11 +2,8 @@ import MailchimpSubscribe, { EmailFormFields } from "react-mailchimp-subscribe";
 import { CustomForm } from "./CustomForm";
 
 export function MailchimpFormContainer() {
-  // const U = import.meta.env.MAILCHIMP_U;
-  // const ID = import.meta.env.MAILCHIMP_ID;
-
-  const U = "37d01d60608062b84374bc1b7";
-  const ID = "84b02c1391";
+  const U = import.meta.env.MAILCHIMP_U;
+  const ID = import.meta.env.MAILCHIMP_ID;
 
   const URL = `https://gmail.us17.list-manage.com/subscribe/post?u=${U}&id=${ID}`;
 
