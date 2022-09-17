@@ -22,6 +22,8 @@ export function CustomForm({ status, message, onValidated }: CustomFormProps) {
   const [plan, setPlan] = useState("Nenhum");
   const [messageError, setMessageError] = useState("");
 
+  console.log(message);
+
   function handleSubmit(e: { preventDefault: () => void }) {
     e.preventDefault();
 
