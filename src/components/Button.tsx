@@ -10,7 +10,7 @@ export function Button({ text, disabled = false }: ButtonProps) {
   return (
     <button
       disabled={disabled}
-      className={`${isDisabled} my-2 text-zinc-50  font-medium py-3 px-10 transition-colors rounded`}
+      className={`${isDisabled} my-2 text-zinc-50 font-semibold py-3 px-10 transition-colors rounded`}
     >
       {text}
     </button>

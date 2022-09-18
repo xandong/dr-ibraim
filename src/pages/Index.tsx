@@ -39,7 +39,7 @@ export function Index() {
               </p>
               <a
                 href="#sec-5"
-                className="flex w-fit mt-6 font-medium text-lg py-3 px-6  bg-zinc-100 hover:bg-zinc-50 shadow-md hover:shadow-xl my-2 text-primary-600 transition-all rounded"
+                className="flex w-fit mt-6 font-semibold text-lg py-3 px-6  bg-zinc-100 hover:bg-zinc-50 shadow-md hover:shadow-xl my-2 text-primary-800 transition-all rounded"
               >
                 Conversar com o Dr. Ibraim
               </a>
@@ -101,7 +101,7 @@ export function Index() {
         </div>
         <a
           href="#sec-5"
-          className="flex w-fit mt-6 font-medium text-lg py-3 px-6  bg-zinc-100 hover:bg-zinc-50 shadow-md hover:shadow-xl my-2 text-primary-600 transition-all rounded"
+          className="flex w-fit mt-6 font-semibold text-lg py-3 px-6  bg-zinc-100 hover:bg-zinc-50 shadow-md hover:shadow-xl my-2 text-primary-800 transition-all rounded"
         >
           Agendar Consulta
         </a>
@@ -149,7 +149,7 @@ export function Index() {
             </ul>
             <a
               href="#sec-5"
-              className="flex w-fit mt-6 font-medium text-lg py-3 px-6  bg-primary-400 hover:bg-primary-300 my-2 text-zinc-50 transition-colors rounded"
+              className="flex w-fit mt-6 font-semibold text-lg py-3 px-6  bg-primary-400 hover:bg-primary-300 my-2 text-zinc-50 transition-colors rounded"
             >
               Quero mudar de vida com a bariátrica
             </a>
