@@ -29,7 +29,7 @@ export function CustomForm({ status, message, onValidated }: CustomFormProps) {
 
     if (name != "") {
       if (email.search(/\S+@\S+\.\S+/) === 0) {
-        if (phone.length === 11) {
+        if (phone.length > 10) {
           setMessageError("");
 
           return onValidated({
@@ -53,13 +53,16 @@ export function CustomForm({ status, message, onValidated }: CustomFormProps) {
         Preencha o formulário e venha conversar comigo.
       </h3>
       <form
-        className="flex flex-col items-center gap-4 py-6 rounded-xl shadow-md text-primary-800"
+        className="flex flex-col items-center gap-4 py-6 rounded-xl shadow-md text-primary-800 relative"
         onSubmit={handleSubmit}
         method="post"
         id="mc-embedded-subscribe-form"
         name="mc-embedded-subscribe-form"
         target="_blank"
       >
+        <span className="absolute top-4 right-6 text-sm text-cancel-default">
+          * Campos obrigatórios
+        </span>
         <InputField
           id="mce-FNAME"
           name="FNAME"
@@ -81,9 +84,10 @@ export function CustomForm({ status, message, onValidated }: CustomFormProps) {
         <InputField
           id="mce-PHONE"
           name="PHONE"
-          type="number"
+          type="tel"
           label="Telefone (DDD + número)"
-          placeHolder="Somente números"
+          placeHolder="Insira os 11 dígitos"
+          pattern="[0-9]{2}[0-9]{5}[0-9]{4}"
           value={phone}
           setValue={setPhone}
         />
@@ -105,6 +109,9 @@ export function CustomForm({ status, message, onValidated }: CustomFormProps) {
             </select>
           </fieldset>
         </div>
+        <small className="text-cancel-default">
+          * Não atendo plano de saúde HAPVIDA
+        </small>
         {messageError && (
           <div className="text-cancel-default">{messageError}</div>
         )}

@@ -6,6 +6,7 @@ interface IInputProps {
   label: string;
   value: string;
   placeHolder: string;
+  pattern?: string;
   setValue: Dispatch<SetStateAction<string>>;
   messageError?: string;
   required?: boolean;
@@ -17,6 +18,7 @@ export function InputField({
   label,
   value,
   placeHolder,
+  pattern = undefined,
   setValue,
   required = true,
 }: IInputProps) {
@@ -27,6 +29,7 @@ export function InputField({
       </label>
       <input
         id={id}
+        pattern={pattern}
         name={id}
         type={type}
         placeholder={placeHolder}

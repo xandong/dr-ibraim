@@ -3,7 +3,7 @@ interface ItemListProps {
   text: string;
 }
 
-export function ItemList({ indice, text }: ItemListProps) {
+export function ItemOrderList({ indice, text }: ItemListProps) {
   return (
     <li className="p-4 text-center">
       <span className="lg:text-8xl md:text-7xl sm:text-6xl text-5xl font-bold italic">

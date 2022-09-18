@@ -18,7 +18,7 @@ export function Section({ id, title, children, theme, href }: SectionProps) {
   return (
     <section
       id={id}
-      className={`min-h-screen relative lg:px-28 md:px-10 px-2 sm:py-10 py-6 pb-16 flex flex-col text-primary items-center ${useTheme}`}
+      className={`min-h-screen relative lg:px-28 md:px-10 px-2 sm:py-16 py-10 pb-16 flex flex-col text-primary items-center ${useTheme}`}
     >
       <h2 className="xl:px-40 lg:px-20 px-10 sm:pb-10 pb-6 pt-4 sm:text-4xl text-3xl text-center font-extrabold">
         {title}
