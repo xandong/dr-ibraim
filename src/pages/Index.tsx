@@ -6,7 +6,7 @@ import { Section } from "../components/Section";
 export function Index() {
   return (
     <>
-      <section className="min-h-screen relative lg:px-28 md:px-10 px-2 sm:py-10 py-6 pb-16 flex flex-col text-primary items-center bg-gradient-to-br from-primary-600 to-primary-400 text-zinc-50">
+      <section className="min-h-screen relative lg:px-28 md:px-10 px-2 sm:py-10 py-6 pb-16 flex flex-col text-primary items-center bg-gradient-to-br  to-primary-800 from-primary-600 text-zinc-50">
         <header className="w-full pb-6">
           <img src="/logo-ibraim.png" alt="Logo Doutor Ibraim" />
         </header>
