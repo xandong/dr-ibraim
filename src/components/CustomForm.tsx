@@ -43,7 +43,7 @@ export function CustomForm({ status, message, onValidated }: CustomFormProps) {
       }
       return setMessageError("Insira um Email válido.");
     }
-    return setMessageError("Campo nome é obrigatório.");
+    return setMessageError("Campo Nome é obrigatório.");
   }
 
   return (
@@ -85,8 +85,8 @@ export function CustomForm({ status, message, onValidated }: CustomFormProps) {
           id="mce-PHONE"
           name="PHONE"
           type="tel"
-          label="Telefone (DDD + número)"
-          placeHolder="Insira os 11 dígitos"
+          label="Telefone (somente número)"
+          placeHolder="XX X XXXX XXXX"
           pattern="[0-9]{2}[0-9]{5}[0-9]{4}"
           value={phone}
           setValue={setPhone}

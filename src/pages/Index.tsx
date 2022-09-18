@@ -200,6 +200,22 @@ export function Index() {
       >
         <MailchimpFormContainer />
       </Section>
+      <footer
+        className="w-full py-10 sm:px-10 px-4 bg-zinc-800 text-zinc-50
+      flex justify-between items-center"
+      >
+        <img src="/logo-ibraim.png" alt="Logo Doutor Ibraim Cavalcante" />
+        <span>
+          Desenvolvido por{" "}
+          <a
+            className="hover:scale-110 hover:underline underline-offset-2"
+            href="https://github.com/xandong"
+            target={"_blank"}
+          >
+            @xandong
+          </a>
+        </span>
+      </footer>
     </>
   );
 }
