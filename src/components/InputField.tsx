@@ -35,7 +35,7 @@ export function InputField({
         placeholder={placeHolder}
         value={value}
         onChange={(e) => setValue(e.target.value)}
-        className="min-w-[300px] max-h-[90%] p-2 bg-zinc-50 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-50 border-b-2 border-zinc-200 rounded transition-colors duration-200 hover:border-primary-400/40 focus:border-primary-300 focus:outline-none"
+        className="min-w-[300px] max-h-[90%] p-2 bg-zinc-50border-b-2 border-zinc-200 rounded transition-colors duration-200 hover:border-primary-400/40 focus:border-primary-300 focus:outline-none"
         required={required}
       />
     </fieldset>
