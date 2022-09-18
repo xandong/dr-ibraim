@@ -206,25 +206,26 @@ export function Index() {
       </Section>
       <footer
         className="w-full py-10 sm:px-10 px-4 bg-zinc-800 text-zinc-50
-      flex justify-between items-center"
+      flex sm:flex-row flex-col sm:justify-between sm:items-end items-center gap-6"
       >
-        <div>
-          {" "}
+        <div className="flex sm:flex-row flex-col gap-6 items-start">
           <img
             src="/logo-ibraim.png"
             alt="Logomarca Doutor Ibraim Cavalcante"
           />
-          <span>Doutor Ibraim Cavalcante</span>
-          <span>Todos os direitos reservados &copy;</span>
+          <div className="flex flex-col md:items-start items-start justify-between">
+            <p className="font-medium">Doutor Ibraim Cavalcante</p>
+            <small>&copy;Todos os direitos reservados</small>
+          </div>
         </div>
-        <span>
+        <span className="px-6 text-end">
           Desenvolvido por{" "}
           <a
-            className="hover:scale-110 hover:underline underline-offset-2"
+            className="hover:scale-110 hover:underline underline-offset-2 font-medium"
             href="https://github.com/xandong"
             target={"_blank"}
           >
-            @xandong
+            xandong
           </a>
         </span>
       </footer>
