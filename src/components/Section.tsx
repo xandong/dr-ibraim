@@ -18,7 +18,7 @@ export function Section({ id, title, children, theme, href }: SectionProps) {
   return (
     <section
       id={id}
-      className={`min-h-screen relative lg:px-28 md:px-10 px-2 sm:py-16 py-10 pb-16 flex flex-col text-primary items-center ${useTheme}`}
+      className={`min-h-[100vh] relative lg:px-28 md:px-10 px-2 pt-6 pb-20 flex flex-col text-primary items-center ${useTheme}`}
     >
       <h2 className="xl:px-40 lg:px-20 px-10 sm:pb-10 pb-6 pt-4 sm:text-4xl text-3xl text-center font-extrabold">
         {title}
@@ -27,7 +27,7 @@ export function Section({ id, title, children, theme, href }: SectionProps) {
       {href ? (
         <a
           href={href}
-          className="absolute bottom-6 right-6 flex items-center justify-center w-8 h-8 p-2 text-5xl rounded bg-zinc-200 hover:bg-zinc-100 hover:scale-90 transition-colors"
+          className="absolute bottom-10 right-6 flex items-center justify-center w-8 h-8 p-2 text-5xl rounded bg-zinc-200 hover:bg-zinc-100 hover:scale-90 transition-colors animate-bounce hover:animate-none"
         >
           <ArrowDown />
         </a>

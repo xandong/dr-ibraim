@@ -6,8 +6,8 @@ import { Section } from "../components/Section";
 export function Index() {
   return (
     <>
-      <section className="min-h-screen relative lg:px-28 md:px-10 px-2 sm:py-10 py-6 pb-16 flex flex-col text-primary items-center bg-gradient-to-br  to-primary-800 from-primary-600 text-zinc-50">
-        <header className="w-full pb-6">
+      <section className="min-h-screen relative lg:px-28 md:px-10 px-2 sm:py-10 py-6 pb-16 flex flex-col text-primary items-center bg-gradient-to-b  to-primary-800 from-primary-600 text-zinc-50">
+        <header className="w-full pb-6 flex sm:justify-start justify-center">
           <img src="/logo-ibraim.png" alt="Logo Doutor Ibraim" />
         </header>
 
@@ -21,7 +21,11 @@ export function Index() {
 
           <div className="flex md:flex-row flex-col gap-10 items-center p-2 text-center">
             <div className="md:w-1/2 w-full flex items-center justify-center">
-              <img src="/video1.png" alt="" />
+              <img
+                src="/video1.png"
+                alt=""
+                className="rounded-md shadow-md hover:shadow-xl hover:scale-105 transition-all duration-[350ms]"
+              />
             </div>
 
             <div className="md:w-1/2 w-full flex flex-col items-center gap-2">
@@ -84,14 +88,14 @@ export function Index() {
             <img
               src="/video2.png"
               alt=""
-              className="rounded-md shadow-2xl border-x-2 border-primary-600"
+              className="rounded-md shadow-md hover:shadow-xl hover:scale-105 transition-all duration-[350ms]"
             />
           </div>
           <div>
             <img
               src="/video3.png"
               alt=""
-              className="rounded-md shadow-2xl border-x-2 border-primary-600"
+              className="rounded-md shadow-md hover:shadow-xl hover:scale-105 transition-all duration-[350ms]"
             />
           </div>
         </div>
@@ -204,7 +208,15 @@ export function Index() {
         className="w-full py-10 sm:px-10 px-4 bg-zinc-800 text-zinc-50
       flex justify-between items-center"
       >
-        <img src="/logo-ibraim.png" alt="Logo Doutor Ibraim Cavalcante" />
+        <div>
+          {" "}
+          <img
+            src="/logo-ibraim.png"
+            alt="Logomarca Doutor Ibraim Cavalcante"
+          />
+          <span>Doutor Ibraim Cavalcante</span>
+          <span>Todos os direitos reservados &copy;</span>
+        </div>
         <span>
           Desenvolvido por{" "}
           <a
