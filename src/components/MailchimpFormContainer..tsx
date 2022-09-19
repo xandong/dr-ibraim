@@ -1,6 +1,7 @@
 import MailchimpSubscribe, { EmailFormFields } from "react-mailchimp-subscribe";
 import { CustomForm } from "./CustomForm";
-require("dotenv").config();
+import dotenv from "dotenv";
+dotenv.config();
 
 export function MailchimpFormContainer() {
   const U = import.meta.env.MAILCHIMP_U
