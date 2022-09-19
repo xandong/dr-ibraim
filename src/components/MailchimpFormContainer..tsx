@@ -2,10 +2,10 @@ import MailchimpSubscribe, { EmailFormFields } from "react-mailchimp-subscribe";
 import { CustomForm } from "./CustomForm";
 
 export function MailchimpFormContainer() {
-  const U = import.meta.env.MAILCHIMP_U;
+  const U = import.meta.env.VITE_MAILCHIMP_U;
 
   // const U = "37d01d60608062b84374bc1b7";
-  const ID = import.meta.env.MAILCHIMP_ID;
+  const ID = import.meta.env.VITE_MAILCHIMP_ID;
 
   // const ID = "84b02c1391";
 
